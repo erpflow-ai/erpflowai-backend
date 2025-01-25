@@ -3,23 +3,25 @@ services:
     image: mongo:latest
     container_name: erpflowai-db
     restart: always
+    ports:
+      - "27017:27017"
     volumes:
       - ./volume/mongoData/:/data/db
     networks:
       - erpflowai-network
 
-  backend:
-    build: .
-    container_name: erpflowai-backend 
-    ports:
-      - ${BACKEND_PORT}:8000
-    restart: always
-    depends_on:
-      - db
-    env_file:
-      - .env
-    networks:
-      - erpflowai-network
+  # backend:
+  #   build: .
+  #   container_name: erpflowai-backend 
+  #   ports:
+  #     - ${BACKEND_PORT}:8000
+  #   restart: always
+  #   depends_on:
+  #     - db
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - erpflowai-network
 
   mongo-express:
     image: mongo-express:latest

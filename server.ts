@@ -4,6 +4,7 @@ import config from './config/config';
 import {
 	adminRouter,
 	rootRouter,
+	genaiRouter
 } from './routers';
 import dbConnect from './utils/dbConnect';
 import cors from 'cors';
@@ -14,10 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(
-	cors({
-		origin: config.frontend_url,
-		credentials: true,
-	})
+	cors()
 );
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
@@ -25,6 +23,7 @@ app.use(cookieParser());
 // Middlewares
 app.use('/', rootRouter);
 app.use('/admin', adminRouter);
+app.use('/gen', genaiRouter);
 
 dbConnect(config.db);
 app.listen(config.port, () =>

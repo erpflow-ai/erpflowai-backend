@@ -45,3 +45,10 @@ cp config.example.ts config.ts
 ```bash
     npm run dev
 ```
+
+5. Start using docker
+
+```bash
+    docker compose build
+    docker compose up -d
+```

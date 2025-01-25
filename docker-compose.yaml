@@ -1,0 +1,44 @@
+services:
+  db:
+    image: mongo:latest
+    container_name: erpflowai-db
+    restart: always
+    volumes:
+      - ./volume/mongoData/:/data/db
+    networks:
+      - erpflowai-network
+
+  backend:
+    build: .
+    container_name: erpflowai-backend 
+    ports:
+      - ${BACKEND_PORT}:8000
+    restart: always
+    depends_on:
+      - db
+    env_file:
+      - .env
+    networks:
+      - erpflowai-network
+
+  mongo-express:
+    image: mongo-express:latest
+    ports:
+      - "${ME_PORT}:8081"
+    container_name: erpflowai_mongo_express
+    restart: always
+    depends_on:
+      - db
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: "root"
+      ME_CONFIG_BASICAUTH_PASSWORD: "password"
+      ME_CONFIG_MONGODB_SERVER: "db"
+      ME_CONFIG_MONGODB_URL: "mongodb://db:27017"
+    env_file:
+      - .env
+    networks:
+      - erpflowai-network
+
+networks:
+  erpflowai-network:
+    driver: bridge

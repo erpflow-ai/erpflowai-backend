@@ -45,7 +45,7 @@ services:
     image: onerahmet/openai-whisper-asr-webservice
     container_name: whisper-asr
     ports:
-      - "9000:9000 " # Default port for the whisper service
+      - "9000:9000" # Default port for the whisper service
     restart: always
     environment:
       WHISPER_MODEL: "base" # Adjust this to the desired model: tiny, base, small, medium, large

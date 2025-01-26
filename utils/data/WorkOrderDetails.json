@@ -1,0 +1,636 @@
+[
+    {
+        "id": 1,
+        "projectId": 1,
+        "name": "Shopping mall in Delhi",
+        "status": "In Progress",
+        "bomItems": [],
+        "totalBomCost": 0,
+        "subWorkOrders": [
+            {
+                "id": 2,
+                "projectId": 1,
+                "name": "Land Acquisition and Permits",
+                "status": "In Progress",
+                "bomItems": [
+                    {
+                        "id": 1,
+                        "name": "Legal consultation",
+                        "price": 500000,
+                        "vendor": "LegalEase LLP"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Survey and mapping",
+                        "price": 1000000,
+                        "vendor": "MapTech Solutions"
+                    }
+                ],
+                "totalBomCost": 1500000,
+                "subWorkOrders": [
+                    {
+                        "id": 3,
+                        "projectId": 1,
+                        "name": "Site Preparation and Foundation",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 3,
+                                "name": "Excavation",
+                                "price": 1000000,
+                                "vendor": "Earth Movers Ltd."
+                            },
+                            {
+                                "id": 4,
+                                "name": "Concrete",
+                                "price": 1000000,
+                                "vendor": "Concrete Masters"
+                            }
+                        ],
+                        "totalBomCost": 2000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 4,
+                                "projectId": 1,
+                                "name": "Interior Fit-out",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 5,
+                                        "name": "Flooring",
+                                        "price": 2000000,
+                                        "vendor": "FloorWorld"
+                                    },
+                                    {
+                                        "id": 6,
+                                        "name": "Lighting",
+                                        "price": 3000000,
+                                        "vendor": "BrightLights Co."
+                                    },
+                                    {
+                                        "id": 7,
+                                        "name": "HVAC",
+                                        "price": 3000000,
+                                        "vendor": "AirPro Systems"
+                                    }
+                                ],
+                                "totalBomCost": 8000000,
+                                "subWorkOrders": [
+                                    {
+                                        "id": 5,
+                                        "projectId": 1,
+                                        "name": "Final Inspection and Handover",
+                                        "status": "In Progress",
+                                        "bomItems": [
+                                            {
+                                                "id": 8,
+                                                "name": "Inspection tools",
+                                                "price": 50000,
+                                                "vendor": "InspectTools Pro"
+                                            }
+                                        ],
+                                        "totalBomCost": 50000,
+                                        "subWorkOrders": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 6,
+                        "projectId": 1,
+                        "name": "Building Structure",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 9,
+                                "name": "Steel",
+                                "price": 5000000,
+                                "vendor": "SteelCo Supplies"
+                            },
+                            {
+                                "id": 10,
+                                "name": "Bricks",
+                                "price": 2000000,
+                                "vendor": "BrickMasters"
+                            },
+                            {
+                                "id": 11,
+                                "name": "Glass",
+                                "price": 3000000,
+                                "vendor": "GlassGalaxy"
+                            }
+                        ],
+                        "totalBomCost": 10000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 7,
+                                "projectId": 1,
+                                "name": "Interior Fit-out",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 12,
+                                        "name": "Flooring",
+                                        "price": 2000000,
+                                        "vendor": "FloorWorld"
+                                    },
+                                    {
+                                        "id": 13,
+                                        "name": "Lighting",
+                                        "price": 3000000,
+                                        "vendor": "BrightLights Co."
+                                    },
+                                    {
+                                        "id": 14,
+                                        "name": "HVAC",
+                                        "price": 3000000,
+                                        "vendor": "AirPro Systems"
+                                    }
+                                ],
+                                "totalBomCost": 8000000,
+                                "subWorkOrders": [
+                                    {
+                                        "id": 8,
+                                        "projectId": 1,
+                                        "name": "Final Inspection and Handover",
+                                        "status": "In Progress",
+                                        "bomItems": [
+                                            {
+                                                "id": 15,
+                                                "name": "Inspection tools",
+                                                "price": 50000,
+                                                "vendor": "InspectTools Pro"
+                                            }
+                                        ],
+                                        "totalBomCost": 50000,
+                                        "subWorkOrders": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": 9,
+                                "projectId": 1,
+                                "name": "Install Utilities",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 16,
+                                        "name": "Electrical wiring",
+                                        "price": 1500000,
+                                        "vendor": "ElectroSupply Co."
+                                    },
+                                    {
+                                        "id": 17,
+                                        "name": "Plumbing",
+                                        "price": 1500000,
+                                        "vendor": "PlumbingPros"
+                                    }
+                                ],
+                                "totalBomCost": 3000000,
+                                "subWorkOrders": [
+                                    {
+                                        "id": 10,
+                                        "projectId": 1,
+                                        "name": "Final Inspection and Handover",
+                                        "status": "In Progress",
+                                        "bomItems": [
+                                            {
+                                                "id": 18,
+                                                "name": "Inspection tools",
+                                                "price": 50000,
+                                                "vendor": "InspectTools Pro"
+                                            }
+                                        ],
+                                        "totalBomCost": 50000,
+                                        "subWorkOrders": []
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "projectId": 1,
+        "name": "Smart city infrastructure in Hyderabad",
+        "status": "In Progress",
+        "bomItems": [],
+        "totalBomCost": 0,
+        "subWorkOrders": [
+            {
+                "id": 2,
+                "projectId": 1,
+                "name": "Project Planning and Scoping",
+                "status": "In Progress",
+                "bomItems": [
+                    {
+                        "id": 1,
+                        "name": "Consultancy services",
+                        "price": 500000,
+                        "vendor": "Urban Planning Solutions"
+                    },
+                    {
+                        "id": 2,
+                        "name": "Software licenses",
+                        "price": 500000,
+                        "vendor": "TechSolutions Ltd."
+                    }
+                ],
+                "totalBomCost": 1000000,
+                "subWorkOrders": [
+                    {
+                        "id": 3,
+                        "projectId": 1,
+                        "name": "Smart Transportation Systems",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 3,
+                                "name": "Intelligent Traffic Management Systems",
+                                "price": 20000000,
+                                "vendor": "TrafficTech Inc."
+                            },
+                            {
+                                "id": 4,
+                                "name": "Smart Parking Systems",
+                                "price": 10000000,
+                                "vendor": "ParkSmart Solutions"
+                            },
+                            {
+                                "id": 5,
+                                "name": "Electric Vehicle Charging Stations",
+                                "price": 20000000,
+                                "vendor": "PowerUp Energy"
+                            }
+                        ],
+                        "totalBomCost": 50000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 4,
+                                "projectId": 1,
+                                "name": "Final Integration, Testing and Deployment",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 6,
+                                        "name": "Testing and QA",
+                                        "price": 2500000,
+                                        "vendor": "QualityAssured Inc."
+                                    },
+                                    {
+                                        "id": 7,
+                                        "name": "Deployment and Training",
+                                        "price": 2500000,
+                                        "vendor": "Deployment Experts"
+                                    }
+                                ],
+                                "totalBomCost": 5000000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "projectId": 1,
+                        "name": "Smart Energy Grid",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 8,
+                                "name": "Smart Meters",
+                                "price": 10000000,
+                                "vendor": "MeterMax Inc."
+                            },
+                            {
+                                "id": 9,
+                                "name": "Renewable Energy Integration",
+                                "price": 20000000,
+                                "vendor": "GreenEnergy Solutions"
+                            },
+                            {
+                                "id": 10,
+                                "name": "Energy Storage Systems",
+                                "price": 10000000,
+                                "vendor": "BatteryTech Ltd."
+                            }
+                        ],
+                        "totalBomCost": 40000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 6,
+                                "projectId": 1,
+                                "name": "Final Integration, Testing and Deployment",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 11,
+                                        "name": "Testing and QA",
+                                        "price": 2500000,
+                                        "vendor": "QualityAssured Inc."
+                                    },
+                                    {
+                                        "id": 12,
+                                        "name": "Deployment and Training",
+                                        "price": 2500000,
+                                        "vendor": "Deployment Experts"
+                                    }
+                                ],
+                                "totalBomCost": 5000000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "projectId": 1,
+                        "name": "Smart Waste Management",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 13,
+                                "name": "Smart Bins",
+                                "price": 5000000,
+                                "vendor": "WasteTech Inc."
+                            },
+                            {
+                                "id": 14,
+                                "name": "Waste Collection Optimization Software",
+                                "price": 5000000,
+                                "vendor": "RouteSmart Solutions"
+                            }
+                        ],
+                        "totalBomCost": 10000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 8,
+                                "projectId": 1,
+                                "name": "Final Integration, Testing and Deployment",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 15,
+                                        "name": "Testing and QA",
+                                        "price": 2500000,
+                                        "vendor": "QualityAssured Inc."
+                                    },
+                                    {
+                                        "id": 16,
+                                        "name": "Deployment and Training",
+                                        "price": 2500000,
+                                        "vendor": "Deployment Experts"
+                                    }
+                                ],
+                                "totalBomCost": 5000000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "projectId": 1,
+                        "name": "Public Wi-Fi and IoT Infrastructure",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 17,
+                                "name": "Wi-Fi Access Points",
+                                "price": 10000000,
+                                "vendor": "NetConnect Inc."
+                            },
+                            {
+                                "id": 18,
+                                "name": "IoT Sensors and Networks",
+                                "price": 10000000,
+                                "vendor": "SensorTech Ltd."
+                            }
+                        ],
+                        "totalBomCost": 20000000,
+                        "subWorkOrders": [
+                            {
+                                "id": 10,
+                                "projectId": 1,
+                                "name": "Final Integration, Testing and Deployment",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 19,
+                                        "name": "Testing and QA",
+                                        "price": 2500000,
+                                        "vendor": "QualityAssured Inc."
+                                    },
+                                    {
+                                        "id": 20,
+                                        "name": "Deployment and Training",
+                                        "price": 2500000,
+                                        "vendor": "Deployment Experts"
+                                    }
+                                ],
+                                "totalBomCost": 5000000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "projectId": 1,
+        "name": "construct a dam in rajapalayam",
+        "status": "In Progress",
+        "bomItems": [],
+        "totalBomCost": 0,
+        "subWorkOrders": [
+            {
+                "id": 2,
+                "projectId": 1,
+                "name": "Site Survey and Assessment (Rajapalayam)",
+                "status": "In Progress",
+                "bomItems": [
+                    {
+                        "id": 1,
+                        "name": "Survey equipment",
+                        "price": 3500,
+                        "vendor": "SurveyTech Ltd."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Site analysis software",
+                        "price": 2000,
+                        "vendor": "GeoData Solutions"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Safety gear",
+                        "price": 2500,
+                        "vendor": "SafeWear Inc."
+                    }
+                ],
+                "totalBomCost": 8000,
+                "subWorkOrders": [
+                    {
+                        "id": 3,
+                        "projectId": 1,
+                        "name": "Environmental Impact Assessment (Rajapalayam)",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 4,
+                                "name": "Environmental testing kits",
+                                "price": 5000,
+                                "vendor": "EcoTest Labs"
+                            },
+                            {
+                                "id": 5,
+                                "name": "Report writing software",
+                                "price": 10000,
+                                "vendor": "ReportGen Inc."
+                            }
+                        ],
+                        "totalBomCost": 15000,
+                        "subWorkOrders": [
+                            {
+                                "id": 4,
+                                "projectId": 1,
+                                "name": "Final Inspection and Handover (Rajapalayam)",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 6,
+                                        "name": "Inspection tools",
+                                        "price": 5000,
+                                        "vendor": "InspectTools Pro"
+                                    }
+                                ],
+                                "totalBomCost": 5000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "projectId": 1,
+                        "name": "Land Acquisition and Permits (Rajapalayam)",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 7,
+                                "name": "Legal consultation",
+                                "price": 15000,
+                                "vendor": "LegalEase Partners"
+                            },
+                            {
+                                "id": 8,
+                                "name": "Permitting fees",
+                                "price": 5000,
+                                "vendor": "Rajapalayam Municipal Corp."
+                            }
+                        ],
+                        "totalBomCost": 20000,
+                        "subWorkOrders": [
+                            {
+                                "id": 6,
+                                "projectId": 1,
+                                "name": "Final Inspection and Handover (Rajapalayam)",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 9,
+                                        "name": "Inspection tools",
+                                        "price": 5000,
+                                        "vendor": "InspectTools Pro"
+                                    }
+                                ],
+                                "totalBomCost": 5000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 7,
+                        "projectId": 1,
+                        "name": "Prepare Foundation (Rajapalayam)",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 10,
+                                "name": "Concrete",
+                                "price": 30000,
+                                "vendor": "Concrete Masters"
+                            },
+                            {
+                                "id": 11,
+                                "name": "Rebar",
+                                "price": 30000,
+                                "vendor": "Rebar Solutions"
+                            }
+                        ],
+                        "totalBomCost": 60000,
+                        "subWorkOrders": [
+                            {
+                                "id": 8,
+                                "projectId": 1,
+                                "name": "Final Inspection and Handover (Rajapalayam)",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 12,
+                                        "name": "Inspection tools",
+                                        "price": 5000,
+                                        "vendor": "InspectTools Pro"
+                                    }
+                                ],
+                                "totalBomCost": 5000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": 9,
+                        "projectId": 1,
+                        "name": "Construct Spillway (Rajapalayam)",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 13,
+                                "name": "Steel reinforcement",
+                                "price": 25000,
+                                "vendor": "SteelCo Supplies"
+                            },
+                            {
+                                "id": 14,
+                                "name": "Concrete",
+                                "price": 45000,
+                                "vendor": "Concrete Masters"
+                            }
+                        ],
+                        "totalBomCost": 70000,
+                        "subWorkOrders": [
+                            {
+                                "id": 10,
+                                "projectId": 1,
+                                "name": "Final Inspection and Handover (Rajapalayam)",
+                                "status": "In Progress",
+                                "bomItems": [
+                                    {
+                                        "id": 15,
+                                        "name": "Inspection tools",
+                                        "price": 5000,
+                                        "vendor": "InspectTools Pro"
+                                    }
+                                ],
+                                "totalBomCost": 5000,
+                                "subWorkOrders": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Shopping mall in Delhi",
+        "capital": 34000000,
+        "duration": "190 days",
+        "status": "In Progress",
+        "inventoryStatus": "Partially Stocked",
+        "customer": "Client Co."
+    },
+    {
+        "id": 1,
+        "name": "Smart city infrastructure in Hyderabad",
+        "capital": 141000000,
+        "duration": "330 days",
+        "status": "In Progress",
+        "inventoryStatus": "Partially Stocked",
+        "customer": "Client Co."
+    },
+    {
+        "id": 1,
+        "name": "construct a dam in rajapalayam",
+        "capital": 233000,
+        "duration": "67 days",
+        "status": "In Progress",
+        "inventoryStatus": "Partially Stocked",
+        "customer": "Client Co."
+    }
+]

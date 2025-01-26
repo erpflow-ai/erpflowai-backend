@@ -26,6 +26,7 @@ cp .env.example .env
     DAUTH_CLIENT_SECRET=
     DAUTH_CLIENT_ID=
     DAUTH_REDIRECT_URI=
+    GENAI_API_KEY
     ME_PORT=8081
     # MONGO_ROOT_USER=devroot
     # MONGO_ROOT_PASSWORD=devroot

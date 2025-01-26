@@ -1,0 +1,6 @@
+flask
+flask-cors
+openai-whisper
+torch==2.0.1  # Specify a compatible version of PyTorch
+triton==2.0.0  # Explicit version required by whisper
+numpy<2

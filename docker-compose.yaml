@@ -10,18 +10,18 @@ services:
     networks:
       - erpflowai-network
 
-  backend:
-    build: .
-    container_name: erpflowai-backend 
-    ports:
-      - ${BACKEND_PORT}:8000
-    restart: always
-    depends_on:
-      - db
-    env_file:
-      - .env
-    networks:
-      - erpflowai-network
+  # backend:
+  #   build: .
+  #   container_name: erpflowai-backend 
+  #   ports:
+  #     - ${BACKEND_PORT}:8000
+  #   restart: always
+  #   depends_on:
+  #     - db
+  #   env_file:
+  #     - .env
+  #   networks:
+  #     - erpflowai-network
 
   mongo-express:
     image: mongo-express:latest

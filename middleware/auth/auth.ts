@@ -7,9 +7,9 @@ const isUserAuthenticated = (
 	res: Response,
 	next: NextFunction
 ) => {
-	if (!auth) {
-		return res.status(401).json({ message: 'User is not authenticated' });
-	}
+	// if (!auth) {
+	// 	return res.status(401).json({ message: 'User is not authenticated' });
+	// }
 	console.log('User Authenticated');
 	next();
 };

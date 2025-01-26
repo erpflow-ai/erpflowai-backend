@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "projectId": 1,
+        "name": "200ft bridge in Mumbai",
+        "status": "In Progress",
+        "bomItems": [],
+        "totalBomCost": 0,
+        "subWorkOrders": [
+            {
+                "id": 2,
+                "projectId": 1,
+                "name": "Site Survey and Geotechnical Investigation",
+                "status": "In Progress",
+                "bomItems": [
+                    {
+                        "id": 1,
+                        "name": "Survey equipment",
+                        "price": 5000,
+                        "vendor": "SurveyTech Ltd."
+                    },
+                    {
+                        "id": 2,
+                        "name": "Soil testing kits",
+                        "price": 10000,
+                        "vendor": "GeoTech Labs"
+                    }
+                ],
+                "totalBomCost": 15000,
+                "subWorkOrders": [
+                    {
+                        "id": 3,
+                        "projectId": 1,
+                        "name": "Design and Permitting",
+                        "status": "In Progress",
+                        "bomItems": [
+                            {
+                                "id": 3,
+                                "name": "Engineering software",
+                                "price": 10000,
+                                "vendor": "CADSoft Inc."
+                            },
+                            {
+                                "id": 4,
+                                "name": "Permitting fees",
+                                "price": 30000,
+                                "vendor": "Mumbai Municipal Corp."
+                            }
+                        ],
+                        "totalBomCost": 40000,
+                        "subWorkOrders": []
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -2,6 +2,7 @@ export const trainingData = [
     {
         "text_input": "construct a dam",
         "output": {
+            "total_duration_days": 40,
             "work_orders": [
                 {
                     "id": "wo11",
@@ -16,7 +17,7 @@ export const trainingData = [
                         "surveyors": 4,
                         "safety officer": 1
                     },
-                    "child_work_orders": ["wo12"]
+                    "child_work_orders": ["wo12", "wo13", "wo14"]
                 },
                 {
                     "id": "wo12",
@@ -31,7 +32,7 @@ export const trainingData = [
                         "civil engineer": 1,
                         "construction workers": 25
                     },
-                    "child_work_orders": ["wo13", "wo14"]
+                    "child_work_orders": ["wo15"]
                 },
                 {
                     "id": "wo13",
@@ -50,16 +51,16 @@ export const trainingData = [
                 },
                 {
                     "id": "wo14",
-                    "task": "Install Water Gates",
-                    "estimated_cost": 30000,
+                    "task": "Install Electrical Systems",
+                    "estimated_cost": 25000,
                     "duration_days": 15,
                     "bill_of_materials": [
-                        { "item": "Steel gates", "price": 20000, "vendor": "SteelCo Supplies" },
-                        { "item": "Bolts and fasteners", "price": 10000, "vendor": "BoltFactory Inc." }
+                        { "item": "Electrical wiring", "price": 15000, "vendor": "ElectroSupply Co." },
+                        { "item": "Control systems", "price": 10000, "vendor": "ControlTech Ltd." }
                     ],
                     "stakeholders": {
-                        "mechanical engineer": 1,
-                        "construction workers": 20
+                        "electricians": 8,
+                        "engineers": 2
                     },
                     "child_work_orders": ["wo15"]
                 },
@@ -84,6 +85,7 @@ export const trainingData = [
     {
         "text_input": "construct a stadium",
         "output": {
+            "total_duration_days": 70,
             "work_orders": [
                 {
                     "id": "wo16",
@@ -98,7 +100,7 @@ export const trainingData = [
                         "architects": 2,
                         "surveyors": 3
                     },
-                    "child_work_orders": ["wo17"]
+                    "child_work_orders": ["wo17", "wo18", "wo19"]
                 },
                 {
                     "id": "wo17",
@@ -113,7 +115,7 @@ export const trainingData = [
                         "civil engineer": 1,
                         "construction workers": 30
                     },
-                    "child_work_orders": ["wo18"]
+                    "child_work_orders": ["wo20"]
                 },
                 {
                     "id": "wo18",
@@ -129,20 +131,20 @@ export const trainingData = [
                         "structural engineer": 1,
                         "construction workers": 40
                     },
-                    "child_work_orders": ["wo19"]
+                    "child_work_orders": ["wo20"]
                 },
                 {
                     "id": "wo19",
-                    "task": "Install Seating and Amenities",
+                    "task": "Install Utilities and Systems",
                     "estimated_cost": 80000,
                     "duration_days": 30,
                     "bill_of_materials": [
-                        { "item": "Seating", "price": 50000, "vendor": "SeatMasters" },
-                        { "item": "Electrical wiring", "price": 30000, "vendor": "ElectroSupply Co." }
+                        { "item": "HVAC systems", "price": 50000, "vendor": "AirPro Systems" },
+                        { "item": "Lighting equipment", "price": 30000, "vendor": "BrightLights Co." }
                     ],
                     "stakeholders": {
                         "electricians": 10,
-                        "construction workers": 20
+                        "technicians": 5
                     },
                     "child_work_orders": ["wo20"]
                 },
@@ -164,4 +166,4 @@ export const trainingData = [
             "planning_jrc": "Sports Infrastructure Consultant"
         }
     }
-]
+];

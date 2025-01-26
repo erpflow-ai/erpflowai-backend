@@ -17,10 +17,9 @@ export const resolveRequirement = async (req: Request, res: Response) => {
         return res.status(400).json({ error: "Input is required" });
     }
 
-    const prompt = basePrompt + `### Input: ${input}\n### Output:`;
+    const prompt = "You are a ai plugin to existing erp. you are going to automate and generate the workflows for the given project. try to have many branches from any nodes so work is done effeciently and fast with minimum cost follow this base prompt: " + basePrompt + `### Input: ${input}\n### Output:`;
 
     try {
-        // Make the request to the Google Generative AI API
         const response = await axios.post(
             `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${process.env.GENAI_API_KEY}`,
             {
@@ -37,11 +36,9 @@ export const resolveRequirement = async (req: Request, res: Response) => {
             }
         );
 
-        // Extract the result
         const result = response.data.candidates[0].content.parts[0].text;
         console.log("answer:", result);
 
-        // Send the result as a JSON response
         res.status(200).json({ message: result });
     } catch (error: any) {
         console.error("Error resolving requirement:", error.response?.data || error.message);

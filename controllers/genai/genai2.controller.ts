@@ -31,7 +31,7 @@ export const parseBase64ToWav = async (req: Request, res: Response) => {
 
         // Send the file to the ASR API
         const response = await axios.post(
-            'http://localhost:9000/asr', {'audio_file': fs.createReadStream(tempFilePath)},
+            'http://localhost:9000/asr', { 'audio_file': fs.createReadStream(tempFilePath) },
         );
 
         // Extract the result

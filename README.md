@@ -1,4 +1,4 @@
-# erpflow.ai Server '23
+# erpflow.ai Server '25
 
 Server for the bills portal built using Express and MongoDB.
 
@@ -46,7 +46,7 @@ cp config.example.ts config.ts
     npm run dev
 ```
 
-5. Start using docker
+5. Start using docker (db, python server)
 
 ```bash
     docker compose build

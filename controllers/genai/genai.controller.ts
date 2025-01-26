@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import axios from 'axios';
+const axios= require('axios')
 
 import { trainingData } from './../../utils/trainingData';
 
